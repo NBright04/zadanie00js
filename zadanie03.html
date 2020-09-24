@@ -10,14 +10,20 @@
 <body>
 
     <h1>Zadanie 3</h1>
-    <p>Program oblicza sumę dwóch liczb.</p>
+    <p>Program wykonuje operacje matematyczne na dwóch liczbach rzeczywistych.</p>
     <script>
+        var a = parseFloat(prompt("Podaj liczbę a:", ""));
+        var b = parseFloat(prompt("Podaj liczbę b:", ""));
 
-        var a = parseInt(prompt("Podaj liczbę a:", ""));
-        var b = parseInt(prompt("Podaj liczbę b:", ""));
         var suma = a + b;
-        document.write("Suma liczb: " + a + " + " + b + " = " + suma);
+        var roznica = a - b;
+        var iloraz = a / b;
+        var iloczyn = a * b;
 
+        document.write("Suma liczb: " + a + " + " + b + " = " + suma);
+        document.write("<br>Różnica liczb: " + a + " - " + b + " = " + roznica);
+        document.write("<br>Iloraz liczb: " + a + " / " + b + " = " + iloraz);
+        document.write("<br>Iloczyn liczb: " + a + " * " + b + " = " + iloczyn);
     </script>
 
 </body>
